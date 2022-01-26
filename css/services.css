@@ -1,0 +1,72 @@
+/* SECTION SERVICES */
+.section-services{
+    padding-bottom: calc(70px - 24px);
+}
+.section-services-list
+{
+    flex-wrap: wrap;
+}
+.section-services-item
+{
+    max-width: 572px;
+    min-height: 325px;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+
+    border-radius: 12px;
+    background-color: white;
+
+    margin-bottom: 24px;
+}
+
+.services-item-img_1
+{
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+}
+.services-item-img_2
+{
+    background-image: url(../img/3.png);
+    background-repeat: no-repeat;
+}
+.services-item-img_3
+{
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+}
+.services-item-img_4
+{
+    background-image: url(../img/cars.png);
+    background-repeat: no-repeat;
+}
+
+.services-arrow
+{
+    background-image: url(../img/servises-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    font-family: 'Muller';
+    font-size: 22px;
+    font-weight: 500;
+
+    padding-right: 20px;
+
+    color: var(--orange);
+}
+
+.services-arrow:hover{
+    padding-right: 40px; 
+}
+
+.section-services-description
+{
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+
+    max-width: 395px;
+    margin-top: 15px;
+}

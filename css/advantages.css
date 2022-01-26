@@ -1,0 +1,93 @@
+/* SECTION ADVANTAGE */
+.section-placement{
+    padding-bottom: calc(70px - 24px);
+}
+
+.section-advantage-list
+{
+    flex-wrap: wrap;
+}
+
+
+.section-advantage-item
+{
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+
+    min-height: 275px;
+    padding-top: 123px;
+    padding-right: 44px;
+    padding-left: 44px;
+
+    border-radius: 12px;
+    background-color: white;
+    margin-bottom: 24px;
+    
+} 
+
+.advantage-item-svg_1
+{
+    background-image: url(../img/bathtub.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_2
+{
+    background-image: url(../img/hanger.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_3
+{
+    background-image: url(../img/heating.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_4
+{
+    background-image: url(../img/hotel-key.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_5
+{
+    background-image: url(../img/parking.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_6
+{
+    background-image: url(../img/reception.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_7
+{
+    background-image: url(../img/security-box.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}
+.advantage-item-svg_8
+{
+    background-image: url(../img/swimming-pool.svg);
+    background-repeat: no-repeat;
+    background-position-x: 44px;
+    background-position-y: 44px;
+    background-size: 65px 60px;
+}

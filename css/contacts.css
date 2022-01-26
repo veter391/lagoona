@@ -1,0 +1,136 @@
+.section-contacts a{
+    transition:text-shadow .2s ease-out ;
+}
+.section-contacts a:hover
+{
+    text-shadow: 0 0 10px #999;
+}
+.section-contacts{
+    padding-bottom: 22px;
+}
+.section-contacts-box{
+    background-color: white;
+    border-radius: 12px;
+    min-height: 600px;
+    display: flex;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 46px;
+    padding-bottom: 44px;
+}
+.section-contacts-list{
+    font-size: 16px;
+    font-weight: 500; 
+    line-height: 24px;
+    text-align: left; 
+    min-width: 384px;
+    margin-right: 66px;
+}
+.contacts-title{
+    margin-right: auto;
+    color: #666666;
+    font-size: 22px;
+    font-weight: 700;
+}
+.section-contacts-item{
+    display: flex;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+.section-contacts-item-description{
+    max-width: 230px;
+}
+.section-contacts-item:not(:nth-child(1)){
+    padding-top: 26px;
+}
+.section-contacts-phone-numbers{
+    font-weight: 400; 
+}
+.section-contacts-phone,
+.contacts-phone{
+    color: var(--orange);
+    display: inline-block;
+}
+.section-contacts-email{
+    font-weight: 400; 
+    color: #999999;
+}
+.contacts-email{
+    color: var(--orange);
+}
+.section-contacts-schedule{
+    display: inline-block;
+    padding-right: 40px;
+
+}
+.section-contacts-button-item{
+    width: 100%;
+    padding-top: 44px;
+    display: flex;
+}
+.contacts-button{
+    min-width: 214px;
+    max-width: 380px;
+    color: var(--orange);
+    border: 1px solid var(--orange) ;
+    background-color: white;
+}
+
+.contacts-button:hover{
+    background-color:var(--orange);
+    box-shadow: 2px 2px 10px #888; 
+    color: #fff;
+}
+.contacts-button:focus{
+    outline: none;
+}
+
+.section-contacts-questions{
+    width: 100%;
+}
+.questions-title{
+    margin: 0;
+    padding: 0;
+}
+.section-contacts-questions-between{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 23px;
+}
+.questions-input{
+    width: 304px;
+    height: 70px;
+    font-size: 15px;
+    border: none;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+}
+.section-contacts-message{
+    width: 100%;
+    height: 219px;
+    border: none;
+    resize: none;
+    padding-top: 16px;
+    padding-left: 20px;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+}
+.section-contacts-message-description{
+    color: #999;
+    padding-top: 32px;
+    padding-bottom: 44px;
+}
+.privacy-policy{
+    color: var(--orange);
+    display: inline-block;
+}
+.questions-button{
+    width: 340px;
+    height: 70px;
+    border: none;
+}

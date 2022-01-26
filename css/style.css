@@ -1,0 +1,228 @@
+@font-face
+{
+    font-family: 'Muller';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+}
+
+
+/* Oбщие стили */
+:root{
+    --orange:#cc9933;
+    --col33:#333333;
+}
+
+
+
+
+html
+{
+    box-sizing: border-box;    /* чтобы pading не влиял на внешний вид */
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;    /* 	Значение наследуется от родительского элемента. */
+
+    margin: 0;              /* margin и padding равны 0 для всех элементов */
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Muller', Arial, sans-serif;  /* шрифты под проект. (Arial, sans-serif;) - дополнительные шрифты на случай если Muller не сработает*/
+    line-height: 1;                            /* пространствo между строками в тексте. */
+
+    color: var(--col33);                             /* цвет текста который больше всего используется на странице */
+    background-color: #f1f1f1;               /* цвет фона страницы */
+}
+
+section
+{
+    padding-bottom: 70px;   /* общие отступы всех секций */
+}
+
+button,
+input
+{
+    font: inherit;          /* используются когда font или font-family не наследуется по умолчанию */
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+a
+{
+    text-decoration: none;  /* сброс стилей для ссылок */
+
+    color: inherit;
+}
+
+ul
+{
+    list-style: none;       /* сброс стилей для списков */
+}
+
+/* container */
+
+.container
+{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+.visually-hidden                    /* visually-hidden для скрытия заголовков */
+{
+    position: absolute !important;  /* Указывает, что элемент абсолютно позиционирован */
+
+    overflow: hidden;               /* Отображается только область внутри элемента, остальное будет скрыто. */
+    clip: rect(1px 1px 1px 1px);    /* определяет область позиционированного элемента, в которой будет показано его содержимое. */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+     height: 1px !important;        /*!important - для подключения собственной таблицы стилей */
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+
+.section-title
+{
+    font-size: 40px;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+    margin-left: 44px;
+}
+
+.header-arrow-right,
+.arrow-right{
+    transition-property:padding,text-shadow ;
+    transition-duration:.2s ;
+    transition-timing-function: ease-in-out;
+}
+
+
+.header-arrow-right:hover,
+.arrow-right:hover{
+    text-shadow: 0 0 1px #666;
+}
+.special-offer-arrow:hover{
+    text-shadow: 0 0 2px #f5f5f5;
+    padding-right: 40px;      
+}
+
+.arrow-right
+{
+    background-image: url(../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.arrow-right-white
+{
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/arrow-right-white.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 2px;
+
+    transition-property: padding,background-image;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.bold_color333
+{
+    font-weight: 500;
+
+    color: var(--col33);
+}
+.color_cc9933
+{
+    color: var(--orange);
+}
+
+.button
+{
+    margin-right: 30px;
+    height: 70px;
+    min-width: 160px;
+
+    color: white;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--orange);
+
+    position: relative;
+    overflow: hidden; /* скрывает все элементы которые выходят за рамки блока */
+
+    transition-property: border,transform,color,font-weight,box-shadow,background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+.button:hover{
+    transform: skewX(-7deg);
+    cursor: pointer;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 10px var(--orange); 
+    color: var(--orange);
+    font-weight: 500;
+    }
+
+.button:active{
+    transform: scale(0.95) skewX(-7deg);
+    outline: none;
+}
+/* .clearfix для работы с float */
+
+.clearfix::after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}

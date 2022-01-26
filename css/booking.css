@@ -1,0 +1,46 @@
+/* SECTION QUICK BOOKING */
+
+.section-booking
+{
+    padding-top: 70px;
+}
+.booking-container
+{
+    display: flex;
+}
+
+.section-booking-input-box
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 55px;
+}
+
+.section-booking-input-description
+{
+    display: flex;
+
+    align-items: center;
+}
+.section-booking-input
+{
+    font-family: 'Muller';
+    font-size: 16px;
+    font-weight: 400;
+
+    max-width: 518px;
+    margin-bottom: 24px;
+    padding: 26px 20px;
+
+    border: none;
+    border-radius: 12px;
+}
+.section-booking-input::placeholder{
+    color: #999;
+}
+
+.section-booking-item
+{
+    flex: 1 1 50%;
+}
