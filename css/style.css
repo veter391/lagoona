@@ -70,6 +70,7 @@ body
 
     color: var(--col33);                             /* цвет текста который больше всего используется на странице */
     background-color: #f1f1f1;               /* цвет фона страницы */
+    min-width: 638px;
 }
 
 section

@@ -67,11 +67,8 @@
 .header-nav-list
 {
     display: flex;
-}
-
-.header-nav-item:not(:last-child)
-{
-    margin-right: 47px;
+    justify-content: space-between;
+    width: 60%;
 }
 
 .search

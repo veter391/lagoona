@@ -17,9 +17,11 @@
     line-height: 32px;
 
     min-height: 275px;
+    height: calc(100% - 24px);
     padding-top: 123px;
     padding-right: 44px;
     padding-left: 44px;
+    padding-bottom: 30px;
 
     border-radius: 12px;
     background-color: white;

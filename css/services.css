@@ -10,6 +10,7 @@
 {
     max-width: 572px;
     min-height: 325px;
+    height: calc(100% - 24px);
     padding-top: 200px;
     padding-bottom: 40px;
     padding-left: 45px;
